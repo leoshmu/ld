@@ -1,0 +1,111 @@
+<div class="row">
+	<div class="col-sm-4">
+		Comments: <p class="small"> {{labor_guide.comments.desc}}</p>
+	</div>
+	<div class="col-sm-4">
+		Complications: <p class="small"> {{labor_guide.complications.desc}}</p>
+	</div>
+	<div class="col-sm-4">
+		Treatments <p class="small"> {{labor_guide.treatments.desc}}</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-4">
+		<div class="row">			
+	  			<div class="col-xs-3">
+					<input type="text" class="form-control" ng-model="search_ega" placeholder="EGA">			
+				</div>
+	  			<div class="col-xs-3">
+					<input type="text" class="form-control" ng-model="search_position" placeholder="Pos">			
+				</div>
+	  			<div class="col-xs-3">
+					<input type="text" class="form-control" ng-model="search_weight" placeholder="Weight">			
+				</div>
+	  			<div class="col-xs-3">
+					<input type="text" class="form-control" ng-model="search_placenta" placeholder="Placenta">			
+				</div>
+		</div>
+	</div>
+	<div class="col-xs-4">
+		<input type="text" class="form-control" ng-model="search_complication" placeholder="Complications">
+	</div>
+	<div class="col-xs-4">
+		<input type="text" class="form-control" ng-model="search_treatment" placeholder="Treatments">
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-4">
+
+		<div class="panel panel-default">
+			<div class="panel-heading small">EGA determined by: {{search_ega}}</div>	
+			<div ng-show="word"  ng-repeat = "word in search_ega.split('=').join(' = ').split(' ') track by $index">
+			<ul class="list-group">
+				<li class="small list-group-item" ng-repeat = "abbrev in labor_guide.comments.parts.ega.list | filter: {term:word}">
+					<p>
+						<span class="label label-primary">{{abbrev.term}}</span>							
+						: {{abbrev.def}}
+					</p>
+					<p ng-show="abbrev.comment">({{abbrev.comment}})</p>
+				</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div ng-show="word"  ng-repeat = "word in search_position.split(' ') track by $index" class="panel panel-default">
+			<div class="panel-heading small">Position: {{word}}</div>
+			<ul class="list-group">
+				<li class="small list-group-item" ng-repeat = "abbrev in labor_guide.comments.parts.position.list | filter: {term:word}">
+					<p>
+						<span class="label label-primary">{{abbrev.term}}</span>							
+						: {{abbrev.def}}
+					</p>
+					<p ng-show="abbrev.comment">({{abbrev.comment}})</p>
+				</li>
+			</ul>
+		</div>
+
+		<div ng-show="word"  ng-repeat = "word in search_placenta.split(' ') track by $index" class="panel panel-default">
+			<div class="panel-heading small">Placenta: {{word}}</div>
+			<ul class="list-group">
+				<li class="small list-group-item" ng-repeat = "abbrev in labor_guide.comments.parts.placenta.list | filter: {term:word}">
+					<p>
+						<span class="label label-primary">{{abbrev.term}}</span>							
+						: {{abbrev.def}}
+					</p>
+					<p ng-show="abbrev.comment">({{abbrev.comment}})</p>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="col-sm-4">
+		<div ng-show="word"  ng-repeat = "word in search_complication.split(' ') track by $index" class="panel panel-default">
+		  	<div class="panel-heading small">Matches for: {{word}}</div>
+			
+		  		<ul class="list-group">
+					<li class="small list-group-item" ng-repeat = "abbrev in labor_guide.complications.list | filter: {term:word}">
+						<p>
+							<span class="label label-primary">{{abbrev.term}}</span>							
+							: {{abbrev.def}}
+						</p>
+						<p ng-show="abbrev.comment">({{abbrev.comment}})</p>
+					</li>
+				</ul>
+		  	
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div ng-show="word" ng-repeat = "word in search_treatment.split(' ') track by $index" class="panel panel-default">
+		  	<div class="panel-heading small">Matches for: {{word}}</div>
+	  		<ul class="list-group">
+				<li class="small list-group-item" ng-repeat = "abbrev in labor_guide.treatments.list | filter: word">
+					<p>
+						<span class="label label-primary">{{abbrev.term}}</span>							
+						: {{abbrev.def}}
+					</p>
+					<p class="text-info" ng-show="abbrev.comment">({{abbrev.comment}})</p>
+				</li>
+			</ul>		  	
+		</div>
+	</div>
+</div>
