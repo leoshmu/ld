@@ -1,0 +1,128 @@
+{
+	"comments":{
+		"desc":"Estimated gestational age info, Position/Weight/Placenta",
+		"parts":{
+			"ega":{			
+				"desc":"Information about the estimated gestational age, the baby’s position and size, and the placenta’s location",
+				"list":[				
+					{"term":"L", "def":"last menstrual period", "comment":"For example, L=1 means the estimated gestational age is based on the last menstrual period as well as a first trimester ultrasound and the two methods give consistent estimates"},
+					{"term":"St", "def":"stated; the woman provides the estimated gestational age or her due date", "comment":"For example, St=2 means what the woman reports as the estimated gestational age is consistent with the information from a second trimester ultrasound"},
+					{"term":"1, 2, or 3", "def":"1, 2, or 3 = the trimester in which an ultrasound estimating the gestational age was performed", "comment":"1 is the most accurate, 3 the least"},
+					{"term":"=", "def":"means the two methods of determining the estimated gestational age correlate with each other", "comment":""}
+				]
+			},
+			"position":{
+				"desc":"The first letter or letters describe the baby’s position in the uterus again",
+				"list":[
+					{"term":"Br","def": "breech; buttocks/foot/feet down"},
+					{"term":"Tr","def": "transverse; lying sideways"},
+					{"term":"V","def": "vertex, which is the same as cephalic or head down and is the typical position"}
+				]
+			},
+			"weight":{
+				"desc":"The numbers in the middle give the baby’s estimated weight in grams",
+				"list":[
+					{"term":"IUGR", "def":"intrauterine growth restriction","comment":"The weight percentile for estimated gestational age is sometimes provided in parentheses immediately after the weight"}
+				]
+			},
+			"placenta":{
+				"desc":"The final letter indicates the position of the placenta",
+				"list":[
+					{"term":"A", "def": "anterior"},
+					{"term":"P", "def": "posterior"},
+					{"term":"L", "def": "left"},
+					{"term":"R", "def": "right"},
+					{"term":"La", "def": "lateral"}
+				]
+			}
+		}
+	},
+	"complications": { 
+		"desc":"A catch-all section to indicate complications of the pregnancy and miscellaneous information, usually in reference to the mother but sometimes in reference to the baby; there are always new abbreviations appearing",
+		"list":[
+			{"term":"ABLA","def":"acute blood loss anemia"},
+			{"term":"AMA","def":"advanced maternal age; maternal age greater than 35 years at the time of delivery"},
+			{"term":"Bicornuate","def":"bicornuate uterus; uterine malformation with a central septum dividing the uterus into two 'horns' or creating a heart shape"},
+			{"term":"BLE","def":"bright light exam; performed on HSV positive women to look for active perineal or vaginal lesions that would necessitate a C section delivery to avoid neonatal infection; typically denoted as HSV+/BLE-"},
+			{"term":"BUFA","def":"baby up for adoption; this phrase should no longer be used but is convenient for abbreviating; more appropriate phrases are those such as 'choosing adoption' "},
+			{"term":"C/S","def":"C section"},
+			{"term":"Cerclage","def":"the cervix is stitched closed in an attempt to prevent preterm birth; sometimes done in women with a history of an 'incompetent' or 'insufficient' cervix in which the cervix is relatively weak and may have contributed to preterm birth"},
+			{"term":"CF","def":"cystic fibrosis"},
+			{"term":"Chorio","def":"chorioamnionitis"},
+			{"term":"cHTN","def":"chronic hypertension"},
+			{"term":"Csx","def":"C section"},
+			{"term":"CT+","def":"Chlamydia trachomatis positive; sometimes the results of a 'test of cure' (TOC) will be noted; if negative, the woman’s infection was cured"},
+			{"term":"Dates","def":"the estimated gestational age is beyond 40 weeks"},
+			{"term":"Decel","def":"deceleration in the baby’s heart rate"},
+			{"term":"DiDi","def":"dichorionic diamniotic gestation; twins, each with his or her own placenta, chorion, and amnion"},
+			{"term":"DM2","def":"chronic diabetes mellitus type 2"},
+			{"term":"FAVD","def":"forceps-assisted vaginal delivery"},
+			{"term":"FDIU","def":"fetal demise intrauterine; the fetus is no longer living, equivalent to IUFD"},
+			{"term":"gDM","def":"gestational diabetes mellitus", "comment":"The type is sometimes further specified; for example, gDMA2 to indicate gestational diabetes mellitus type A2"},
+			{"term":"gHTN","def":"gestational hypertension"},
+			{"term":"H/o","def":"history of"},
+			{"term":"HLHS","def":"hypoplastic left heart syndrome; most likely refers to the baby"},
+			{"term":"HSV","def":"herpes simplex virus; if the mother is HSV positive she should have a bright light exam to look for active perineal or vaginal lesions that would necessitate a C section delivery to avoid neonatal infection; typically denoted as HSV+/BLE-"},
+			{"term":"IOL","def":"induction of labor", "comment":"Typically followed by the reason for induction; ex. IOL-PROM, IOL-decel"},
+			{"term":"IUFD","def":"intrauterine fetal demise; the fetus is no longer living, equivalent to FDIU"},
+			{"term":"IUGR","def":"intrauterine growth restriction; the baby’s estimated weight is less than the 10th percentile for estimated gestational age", "comment":"Ultrasound of the umbilical artery with Doppler can be done to evaluate the baby’s circulation; absence or reversal of end diastolic flow indicates insufficient blood flow  "},
+			{"term":"Labor","def":"the woman is currently laboring"},
+			{"term":"MI asthma","def":"mild intermittent asthma"},
+			{"term":"MiP asthma","def":"mild persistent asthma"},
+			{"term":"Mod asthma","def":"moderate persistent asthma"},
+			{"term":"MonoDi","def":"monochorionic diamniotic; twins sharing one placenta and one chorion but each with his or her own amnion"},
+			{"term":"MonoMono","def":"monochorionic monoamniotic; twins sharing one placenta, chorion, and amnion"},
+			{"term":"Multip","def":"multiparous; having delivered multiple babies"},
+			{"term":"NPNC","def":"no prenatal care"},
+			{"term":"NSVD","def":"normal spontaneous vaginal delivery"},
+			{"term":"PreE","def":"preeclampsia", "comment":"Sometimes followed by the manifestations of preeclampsia or the criteria that are met in that woman; for example, 'preE (bp, neuro)' means the woman has preeclampsia with elevated blood pressure and neurologic concerns"},
+			{"term":"PROM","def":"premature rupture of membranes; rupture more than one hour before the onset of labor, at or after 37 weeks’ estimated gestational age"},
+			{"term":"P2ROM or PPROM","def":"preterm, premature rupture of membranes; rupture before 37 weeks’ estimated gestational age and more than one hour before the onset of labor"},
+			{"term":"P3ROM or PPPROM","def":"preterm, premature, prolonged rupture of membranes; rupture before 37 weeks’ estimated gestational age, more than one hour before the onset of labor, and having occurred over 24 hours ago"},
+			{"term":"Previa","def":"placenta previa; the placenta partially or completely overlies the cervix, which increases the risk of hemorrhage and likely necessitates a C section delivery"},
+			{"term":"PTB","def":"preterm birth"},
+			{"term":"PTL","def":"preterm labor"},
+			{"term":"R/o","def":"rule out"},
+			{"term":"Rh-","def":"maternal blood type includes Rh negative"},
+			{"term":"SCD","def":"sickle cell disease"},
+			{"term":"ScT","def":"SCT","def":"sickle cell trait"},
+			{"term":"SROM","def":"spontaneous rupture of membranes"},
+			{"term":"SUA","def":"single umbilical artery; there are normally two umbilical arteries"},
+			{"term":"SVD","def":"spontaneous vaginal delivery"},
+			{"term":"TIUP","def":"twin intrauterine pregnancy"},
+			{"term":"TOC","def":"test of cure; the woman had follow-up testing after treatment for Chlamydia; if negative, the infection was cured"},
+			{"term":"TOLAC","def":"trial of labor after C section"},
+			{"term":"tPTL","def":"threatened preterm labor; signs or symptoms concerning for possible preterm labor"},
+			{"term":"UC","def":"ulcerative colitis"},
+			{"term":"UFF","def":"undesired future fertility; this usually means the woman will have a bilateral tubal ligation after delivery"},
+			{"term":"UTI","def":"urinary tract infection"},
+			{"term":"VAVD","def":"vacuum-assisted vaginal delivery"},
+			{"term":"VB","def":"vaginal bleeding"},
+			{"term":"Velame CI","def":"velamentous cord insertion; abnormal cord insertion into the placenta, has an increased risk of umbilical vessel rupture"}
+		]
+	},
+	"treatments": {
+		"desc":"Interventions the pregnant post-partum woman has received",
+		"list":[
+			{"term":"AI","def":"amnioinfusion; infusing fluid into the amnion or uterus to stimulate labor"},
+			{"term":"AROM","def":"artificial rupture of membranes"},
+			{"term":"BMZ","def":"betamethasone; antenatal steroid to hasten fetal lung maturity when preterm delivery is anticipated within the next 24-48 hours; typically listed with the time and date the 'steroid window is up' or the therapy has reached its maximal benefit", "comment":"Maximal benefit begins 24 hours after initiation of steroid therapy and persists for one week. For example, BMZ^5/27@1800 means betamethasone was administered and will reach its full effect on 5/27 at 6:00 p.m."},
+			{"term":"D&C","def":"dilation and curettage; the cervix is dilated and the uterine contents are scraped, suctioned, or aspirated out"},
+			{"term":"D&E","def":"dilation and evacuation; the cervix is dilated and the uterine contents are scraped, suctioned, or aspirated out"},
+			{"term":"Expt mgmt","def":"expectant management; labor is progressing without medical interventions to speed up the process"},
+			{"term":"FB","def":"Foley bulb; a Foley catheter’s balloon is used to manually dilate the cervix"},
+			{"term":"Ins gtt","def":"insulin drip, continuous insulin infusion"},
+			{"term":"IUPC","def":"intrauterine pressure catheter"},
+			{"term":"IUT","def":"intrauterine transfusion; infusing fluid into the uterus to stimulate labor"},
+			{"term":"IVF","def":"IV fluids"},
+			{"term":"Mg","def":"magnesium; prevents seizures in women with preeclampsia but can cause neonatal hypotonia and poor respiratory effort"},
+			{"term":"Miso","def":"misoprostol; induces labor by causing uterine contractions and cervical ripening or effacement"},
+			{"term":"Nifed","def":"nifedipine; treats hypertension"},
+			{"term":"OT","def":"oxytocin; induces labor by stimulating uterine contractions"},
+			{"term":"PCN","def":"penicillin"},
+			{"term":"SSI","def":"sliding scale insulin"},
+			{"term":"T&C","def":"type and cross"},
+			{"term":"U","def":"units, typically of packed red blood cells"}
+		]
+	}
+}
